@@ -1,0 +1,131 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Choose and Drive your Car</title>
+<link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="./app/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./bootstrap.css">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background:url('./images/bgimg.jpg');background-size:cover;background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;">
+<!--added a deposit button to the accounts
+-->
+<!-- this below thing is a navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="#"><span style="color:#FFFFFF;">Car Rental System</a>
+   </div>
+   <ul class="nav navbar-nav navbar-right">
+      <li><h4>Welcome </h4></li>
+      <li><a href="index.html"><span class="glyphicon glyphicon-log-out" style="color:#FFFFFF;" > Logout</span></a></li>
+    </ul>
+ </div>
+</nav>
+<div class="CarsList">
+  <h2 style="color:#0d47a1;">Cars You can rent</h2>
+  <ul class="list-car">
+    <li class="list-car-item">
+        <div>
+        <div class="carimage">
+          <img src="./images/Audi.png" width="180px" height="130px"><br>Audi A4
+        </div>
+        <div class="cardesc">
+          <p style="color:black; text-align:left">
+            <span id="count1" style="color:#0d47a1;">Car: Audi A4</span></br>
+            Top Speed: 120km/hr</br>
+            Rent: 80rs/hr</br>
+            Fuel expenses are included.
+          </p>
+          <button onclick="clicked(1)"> Book This Car</button>
+        </div>
+        </div>
+      </li>
+      <li class="list-car-item">
+          <div>
+          <div class="carimage">
+            <img src="./images/celerio.jpg" width="180px" height="130px"><br>Maruti Suzuki Celerio
+          </div>
+          <div class="cardesc">
+            <p style="color:black; text-align:left">
+              <span id="count2" style="color:#0d47a1;">Car: Maruti Suzuki Celerio</span></br>
+              Top Speed: 80km/hr</br>
+              Rent: 80rs/hr</br>
+              Fuel expenses are included.
+            </p>
+            <button onclick="clicked(2)"> Book This Car</button>
+          </div>
+          </div>
+        </li>
+        <li class="list-car-item">
+            <div>
+            <div class="carimage">
+              <img src="./images/indigo.jpg" width="180px" height="130px"><br>Tata indigo ECS
+            </div>
+            <div class="cardesc">
+              <p style="color:black; text-align:left">
+                <span id="count3" style="color:#0d47a1;">  Car: Tata indigo ECS</span></br>
+                Top Speed: 90km/hr</br>
+                Rent: 80rs/hr</br>
+                Fuel expenses are included.
+              </p>
+              <button onclick="clicked(3)"> Book This Car</button>
+            </div>
+            </div>
+          </li>
+          <li class="list-car-item">
+              <div>
+              <div class="carimage">
+                <img src="./images/swift.jpg" width="180px" height="130px"><br>Suzuki Swift
+              </div>
+              <div class="cardesc">
+                <p style="color:black; text-align:left">
+                  <span id="count4" style="color:#0d47a1;">  Car: Suzuki Swift</span></br>
+                  Top Speed: 80km/hr</br>
+                  Rent: 80rs/hr</br>
+                  Fuel expenses are included.
+                </p>
+                <button onclick="clicked(4)"> Book This Car</button>
+              </div>
+              </div>
+            </li>
+
+            <li class="list-car-item">
+                <div>
+                <div class="carimage">
+                  <img src="./images/vento.jpg" width="180px" height="130px"><br>Volkswagen Vento
+                </div>
+                <div class="cardesc">
+                  <p style="color:black; text-align:left">
+                    <span id="count5" style="color:#0d47a1;">  Car: Volkswagen Vento</span></br>
+                    Top Speed: 100km/hr</br>
+                    Rent: 80rs/hr</br>
+                    Fuel expenses are included.
+                  </p>
+                  <button onclick="clicked(5)"> Book This Car</button>
+                </div>
+                </div>
+              </li>
+      </ul>
+</div>
+<div class="addmoney">
+
+  <p style="color:black;">Balance: <span id="balancemoney"></span> </br>Want to add money?</p>
+  <button onclick="window.location='addmoney.html'">Add Money</button>
+
+</div>
+
+<div class="returningblock">
+<p style="color:black;">You are already riding a car, do you want to return it?</p>
+  <button onclick="window.location='returncar.html'">Return The Car</button>
+
+</div>
+<div class="footer">
+  <h5 style="padding-bottom:3px;color: white;">&copy; TCS Innovations Lab</h5>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Choose and Drive your Car</title>
+<link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="./app/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./bootstrap.css">
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background:url('./images/bgimg.jpg');background-size:cover;background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;">
+<!--added a deposit button to the accounts
+-->
+<!-- this below thing is a navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="#"><span style="color:#FFFFFF;">Car Rental System</a>
+   </div>
+   <ul class="nav navbar-nav navbar-right">
+      <li><h4>Welcome </h4></li>
+      <li><a href="index.html"><span class="glyphicon glyphicon-log-out" style="color:#FFFFFF;" > Logout</span></a></li>
+    </ul>
+ </div>
+</nav>
+<div class="CarsList" >
+  <h2 style="color:#0d47a1;">Now you are driving this car</h2>
+  <ul class="list-car">
+    <li class="list-car-item" style="height:300px;width:auto;overflow-x:hidden;">
+        <div>
+        <div class="carimage">
+          <img src="./images/Audi.png" width="180px" height="130px"><br>Audi A4
+        </div>
+        <div class="cardesc">
+          <p style="color:black; text-align:left">
+            <span id="count1" style="color:#0d47a1;">Car: Audi A4</span></br>
+
+            <h3 style="color:#0288d1;font-weight:12;">Returning this car will process the transaction automatically</h3>
+          </p>
+
+          <button onclick="returncar()">Return it</button>
+
+        </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="footer" >
+    <h5 style="padding-bottom:3px;color: white;">&copy; TCS Innovations Lab</h5>
+  </div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
